@@ -1,0 +1,88 @@
+@import '../_global';
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #25233C;
+    padding: 10px 14px;
+
+    .sidebar_header{
+        position: relative;
+        border-bottom: 1px solid #fff;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h3{
+            font-weight: 400;
+            color: #fff;
+        }
+        .toggle{
+            position: absolute;
+            top: 1%;
+            right: -25px;
+            transform: translateY(50%);
+            height: 25px;
+            width: 25px;
+            background-color: #25233C;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+    }
+    
+    .menu-bar{
+        margin-top: 50px;
+        .menu-list{
+
+            .menu-item{
+                height: 50px;
+                // background-color:#fff;
+                color: #fff;
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+
+                .icon{
+                    min-width: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 20px;
+                    transition: all 0.3s ease;
+                }
+                .item-title{
+                    font-size: 18px;
+                    font-weight: 400;
+                    opacity: 70%;
+                    transition: all 0.3 ease;
+                }
+                a{
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 6px;
+                    transition: all 0.4s ease;
+                }
+                a:hover{
+                    background-color: #25233C;
+                }
+                .icon:hover{
+                    color: #6158CA;
+                    transition: all 0.4s ease;
+                }
+                .item-title:hover{
+                    color: #6158CA;
+                    transition: all 0.4s ease;
+                }
+            }
+        }
+    }
+}
